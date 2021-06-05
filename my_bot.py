@@ -16,7 +16,7 @@ from pathfinding.finder.a_star import AStarFinder
 
 class BotController:
     def __init__(self, name):
-        self.name = name
+        self.__name = name
 
     def __eq__(self, other: object) -> bool:
         if isinstance(other, BotController):
@@ -29,7 +29,7 @@ class BotController:
     def reset(self) -> None:
         pass
 
-    def decide(self) -> characters.Action:
+    def decide(self):
         return 550
 
     @property
